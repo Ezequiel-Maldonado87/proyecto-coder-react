@@ -1,0 +1,36 @@
+.nav1{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    background-color: black;
+    
+}
+
+.titu{
+    text-align: start;
+    color: yellow;
+    padding: 10px;  
+}
+
+.botonera{ 
+    background-color: black;
+    width: 100%;
+    height:10%;   
+    justify-content:end;  
+    margin-top: 50px;
+}
+
+.botonNav{    
+    background: yellow;
+    color: black;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-left: 3px;
+}
+
+.botonNav:hover {
+    background: gray;
+}
+
+
+
