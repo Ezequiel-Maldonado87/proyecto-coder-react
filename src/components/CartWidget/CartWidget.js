@@ -1,9 +1,10 @@
 import './CartWidget.css'
-const CartWidget = () => {
+
+const CartWidget = (props) => {
     return (
-        <div>
+        <div className='carrito'>
             <img src='/images/cart.png' alt='cart-widget'/>
-            8
+            <h6>{props.cantidad}</h6>      
         </div>
     )
 }
