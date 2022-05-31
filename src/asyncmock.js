@@ -5,7 +5,7 @@ const products = [
         precio: 1000,
         img: '/images/foto1.jpg',
         stock: 30,
-        descripcion: 'Burger completa'
+        descripcion: '1 carne de 260grs de Roastbeef con el punto de cocción exacto, acompañado por una salsa de mostaza y miel, lechuga, cebolla... un Manjar!'
 
     },
     {
@@ -56,6 +56,14 @@ const products = [
 ]
 
 export const getProducts = () => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products)
+        }, 2000)
+    })
+}
+
+export const getProduct = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(products)

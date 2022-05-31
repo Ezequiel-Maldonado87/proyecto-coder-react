@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemlistContainer';
 import ItemCount from './components/ItemCount/ItemCount';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <NavBar />
         <ItemListContainer greeting="Bienvenidos"/>
         <ItemCount/>
+        <ItemDetailContainer/>
       </header>
     </div>
   );
