@@ -1,15 +1,20 @@
 import { useState } from "react";
 import './ItemCount.css'
 
-const ItemCount = () => {
-    const [count, setCount] = useState (0)
+const ItemCount = (props) => {
+    const [count, setCount] = useState (parseInt(props.initial));
 
     const decrement = () => {
-        setCount((count) => count -1 )
+        //condic para evitar estar por debajo de cero en stock
+        if (count > props.initial) {
+        setCount(count -1 );
+        }        
     }
 
     const increment = () => {
-        setCount(count + 1)
+       //condic. condic para no estra por encima d stock disponible
+        if(count < props.stock) {
+        setCount(count + 1 );}
     }
 
     return(

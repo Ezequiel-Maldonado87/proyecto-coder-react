@@ -10,7 +10,7 @@ function App() {
       <header className="App-header">
         <NavBar />
         <ItemListContainer greeting="Bienvenidos"/>
-        <ItemCount/>
+        <ItemCount initial ="0"  stock="10"/>
       </header>
     </div>
   );
