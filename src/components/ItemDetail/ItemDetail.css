@@ -1,7 +1,7 @@
 .cardtwo{
     display: inline-block;
-    width: 330px;
-    height: 400px;
+    width: 530px;
+    height: 600px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     overflow: hidden;
@@ -9,7 +9,7 @@
     margin-top: 60px;
     text-align: center;
     transition: all 0.25s;
-    background-color: blue;
+    background-color: rgb(153, 149, 149);
 
     
 }
@@ -50,4 +50,20 @@ p{
 span{
     font-weight: bold;
     color: black;
+}
+
+h1{
+    color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    color: black;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.aclaracion{
+    color: black;
+    font-weight: bold;
 }

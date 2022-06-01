@@ -1,10 +1,11 @@
+import './ItemDetailContainer.css'
 import { useState, useEffect } from "react"
 import { getProduct } from "../../asyncmock"
 import ItemDetail from "../ItemDetail/ItemDetail"
 
-const ItemDetailContainer = ({id}) => {
+const ItemDetailContainer = () => {
 
-    const [products, setProduct] = useState ([])
+    const [product, setProduct] = useState ()
 
     useEffect(() => {
         getProduct('1').then(response => {
@@ -13,10 +14,9 @@ const ItemDetailContainer = ({id}) => {
     }, [])
 
     return(
-        <div>
-            <h1>{id}</h1>
+        <div className='ItemDetailContainerDiv'>           
             {/*products.map(product => <p key={product.id}> {product.nombre}</p>)*/}
-            <ItemDetail key={products.id} {...products}/>
+            <ItemDetail nombre={product?.nombre} {...product}/>
         </div>
     )
     

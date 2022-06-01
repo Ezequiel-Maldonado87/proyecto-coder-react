@@ -1,16 +1,16 @@
 const products = [
     {
         id: '1',
-        nombre: 'Burger1',
+        nombre: 'Trucker Burger XL',
         precio: 1000,
         img: '/images/foto1.jpg',
         stock: 30,
-        descripcion: '1 carne de 260grs de Roastbeef con el punto de cocción exacto, acompañado por una salsa de mostaza y miel, lechuga, cebolla... un Manjar!'
+        descripcion: '1 carne de 260grs de Roastbeef con el punto de cocción perfecto, acompañado por una salsa de mostaza y miel, lechuga, cebolla... un Manjar!'
 
     },
     {
         id: '2',
-        nombre: 'Burger2',
+        nombre: 'Longer Burger',
         precio: 1000,
         img: '/images/foto2.jpg' ,
         stock: 30,
@@ -19,7 +19,7 @@ const products = [
     },
     {
         id: '3',
-        nombre: 'Burger3',
+        nombre: 'Gibson Burger',
         precio: 1000,
         img:'/images/foto3.jpg',
         stock: 30,
@@ -63,10 +63,10 @@ export const getProducts = () => {
     })
 }
 
-export const getProduct = () => {
+export const getProduct = (id) => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(products)
-        }, 2000)
+            resolve(products.find(prod => prod.id === id))
+        }, 500)
     })
 }
