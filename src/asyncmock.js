@@ -5,7 +5,8 @@ const products = [
         precio: 1000,
         img: '/images/foto1.jpg',
         stock: 30,
-        descripcion: '1 carne de 260grs de Roastbeef con el punto de cocción perfecto, acompañado por una salsa de mostaza y miel, lechuga, cebolla... un Manjar!'
+        descripcion: '1 carne de 260grs de Roastbeef con el punto de cocción perfecto, acompañado por una salsa de mostaza y miel, lechuga, cebolla... un Manjar!',
+        categoria: 'Carne'
 
     },
     {
@@ -14,7 +15,8 @@ const products = [
         precio: 1000,
         img: '/images/foto2.jpg' ,
         stock: 30,
-        descripcion: 'Burger completa'
+        descripcion: 'Burger completa',
+        categoria: 'Carne'
 
     },
     {
@@ -23,7 +25,8 @@ const products = [
         precio: 1000,
         img:'/images/foto3.jpg',
         stock: 30,
-        descripcion: 'Burger completa'
+        descripcion: 'Burger completa',
+        categoria: 'Vegan'
 
     },
     {
@@ -32,7 +35,8 @@ const products = [
         precio: 1000,
         img: '/images/foto4.jpg' ,
         stock: 30,
-        descripcion: 'Burger completa'
+        descripcion: 'Burger completa',
+        categoria: 'Pollo'
 
     },
     {
@@ -41,7 +45,8 @@ const products = [
         precio: 1000,
         img: '/images/foto5.jpg',
         stock: 30,
-        descripcion: 'Burger completa'
+        descripcion: 'Burger completa',
+        categoria: 'Pollo'
 
     },
     {
@@ -50,7 +55,8 @@ const products = [
         precio: 1000,
         img: '/images/foto1.jpg',
         stock: 30,
-        descripcion: 'Burger completa'
+        descripcion: 'Burger completa',
+        categoria: 'Vegan'
 
     }
 ]
@@ -59,7 +65,7 @@ export const getProducts = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(products)
-        }, 2000)
+        }, 500)
     })
 }
 
@@ -69,4 +75,13 @@ export const getProduct = (id) => {
             resolve(products.find(prod => prod.id === id))
         }, 500)
     })
+}
+
+export const getProductsByCategoria = (categoriaId) =>{
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products.filter(prod => prod.categoria === categoriaId))
+        }, 500)
+    })
+
 }

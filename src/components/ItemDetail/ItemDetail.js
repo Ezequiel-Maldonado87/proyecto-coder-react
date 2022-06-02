@@ -9,7 +9,7 @@ const ItemDetail = ({nombre,img,descripcion,precio}) => {
                 <h2>{nombre}</h2>
                 <p>{descripcion}</p>
                 <span>{precio}</span>
-                <p className='aclaracion'>Disponemos de la opción vegana.</p>
+                <p className='aclaracion'>Disponemos de una opción vegana.</p>
             </div>           
         </div>
     )
