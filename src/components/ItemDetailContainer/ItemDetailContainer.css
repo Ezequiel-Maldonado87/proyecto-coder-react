@@ -1,4 +1,9 @@
 .ItemDetailContainerDiv{
     background-color: rgb(58, 57, 57);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 200px;
+    justify-content: center;
     width: 1000px;
 }

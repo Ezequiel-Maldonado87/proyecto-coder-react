@@ -1,5 +1,8 @@
 DOCUMENTANDO
-El proyecto a continuació simula un Ecommerce donde se comercializan Hamburguesas.
+El proyecto a continuación simula un Ecommerce donde se comercializan Hamburguesas.
+
+NAVEGACION
+![alt text](./public/images/Trucker.gif "Trucker")
 
 DEPENDENCIA NPM
 *React-router-dom
