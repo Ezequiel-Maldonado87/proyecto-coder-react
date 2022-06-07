@@ -13,9 +13,9 @@ function App() {
       {/*<header className="App-header">
         {/*<NavBar />*/}
         {/*<ItemListContainer greeting="Bienvenidos"/>*/}
-        {/*<ItemCount initial="0" stock="10"/>
-        <ItemDetailContainer/>
-  </header>*/}
+        {/*<ItemCount initial="0" stock="10"/>*/}
+        {/*<ItemDetailContainer/>*/}
+        {/*</header>*/}
 
       <BrowserRouter>
         <NavBar />

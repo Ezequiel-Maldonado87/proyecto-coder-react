@@ -67,3 +67,10 @@ h2{
     color: black;
     font-weight: bold;
 }
+
+.divCount{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 20px;
+
+}

@@ -4,7 +4,7 @@ const products = [
         nombre: 'Trucker Burger XL',
         precio: 1000,
         img: '/images/foto1.jpg',
-        stock: 30,
+        stock: 15,
         descripcion: '1 carne de 260grs de Roastbeef con el punto de cocción perfecto, acompañado por una salsa de mostaza y miel, lechuga, cebolla... un Manjar!',
         categoria: 'Carne'
 
