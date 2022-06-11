@@ -26,6 +26,7 @@ function App() {
               <Route path='/' element={ <ItemListContainer greeting="Bienvenidos"/> }/>
               <Route path='/categoria/:categoriaId' element={<ItemListContainer greeting="Categorias"/>}/>
               <Route path='/detail/:productoId' element={<ItemDetailContainer/>}/>
+              <Route path='/cart' element={<h1>Cart</h1>} />
             </Routes>
         </BrowserRouter>
       </Context.Provider>
